@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なんの日？</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 なんの日？</h1>
+            <p>日付を入力して、その日が何の日なのかを調べてみましょう！</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="date-input">日付を選択してください：</label>
+                <input type="date" id="date-input" />
+                <button id="search-btn">調べる</button>
+            </div>
+
+            <div class="result-section" id="result-section" style="display: none;">
+                <h2>🎉 その日の情報</h2>
+                <div id="date-display"></div>
+                <div id="events-list"></div>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <p>調べています...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
